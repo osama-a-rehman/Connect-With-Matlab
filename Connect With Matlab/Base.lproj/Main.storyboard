@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="Connect_With_Matlab" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Gmf-9t-HZQ">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nzG-Ot-yFP">
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cRZ-UD-Stu" userLabel="contentView">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upload_image" translatesAutoresizingMaskIntoConstraints="NO" id="UvM-ol-vcl">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="220" id="Jn7-8e-8YY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press these buttons to capture or select a picture and send to the PC in order to apply MATLAB processing to it." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Yu-Ph-9Nl">
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Fgl-cU-zd9">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W93-gh-m1L">
+                                                <color key="backgroundColor" red="0.19591477509999999" green="0.59887379409999997" blue="0.8596699834" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="96m-7Q-65M"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                <state key="normal" title="Capture a photo">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnCapturePicPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iwu-hD-Ww4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWu-r9-OJx">
+                                                <color key="backgroundColor" red="0.19591477513313293" green="0.5988737940788269" blue="0.85966998338699341" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="epO-mr-VGV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                <state key="normal" title="Pick from Gallery">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnPickPicturePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DSE-4T-OSV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="6Yu-Ph-9Nl" firstAttribute="top" secondItem="UvM-ol-vcl" secondAttribute="bottom" constant="40" id="7YN-F3-sJw"/>
+                                    <constraint firstItem="6Yu-Ph-9Nl" firstAttribute="leading" secondItem="cRZ-UD-Stu" secondAttribute="leading" constant="20" id="9om-SH-SaC"/>
+                                    <constraint firstItem="6Yu-Ph-9Nl" firstAttribute="centerX" secondItem="cRZ-UD-Stu" secondAttribute="centerX" id="Cm9-Dv-Sd7"/>
+                                    <constraint firstAttribute="trailing" secondItem="UvM-ol-vcl" secondAttribute="trailing" id="D32-Mw-oyo"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fgl-cU-zd9" secondAttribute="trailing" id="IPb-ZD-3LA"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Yu-Ph-9Nl" secondAttribute="trailing" constant="20" id="LOv-7G-Q6H"/>
+                                    <constraint firstItem="Fgl-cU-zd9" firstAttribute="leading" secondItem="cRZ-UD-Stu" secondAttribute="leading" id="RGK-rd-fSV"/>
+                                    <constraint firstAttribute="width" constant="300" id="RdN-Ai-n9a"/>
+                                    <constraint firstAttribute="height" constant="500" id="hbj-0b-P7z"/>
+                                    <constraint firstItem="UvM-ol-vcl" firstAttribute="leading" secondItem="cRZ-UD-Stu" secondAttribute="leading" id="n6v-os-6t6"/>
+                                    <constraint firstItem="6Yu-Ph-9Nl" firstAttribute="top" secondItem="Fgl-cU-zd9" secondAttribute="bottom" constant="-190" id="wMh-lL-Xdm"/>
+                                    <constraint firstItem="UvM-ol-vcl" firstAttribute="top" secondItem="cRZ-UD-Stu" secondAttribute="top" id="xbO-Qu-jy4"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3GZ-jv-DNp" userLabel="imageShowingView">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QA1-mL-m3t"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wnt-X5-oNb">
+                                        <color key="backgroundColor" red="0.19591477509999999" green="0.59887379409999997" blue="0.8596699834" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="Kka-Gh-BPP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <state key="normal" title="Send this picture">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnUploadPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x9q-vV-YPN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1q-6t-Z3T">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="9yD-jS-yU9"/>
+                                            <constraint firstAttribute="height" constant="50" id="KTo-bV-oeh"/>
+                                        </constraints>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="btnBackPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WuK-Ax-u91"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="x1q-6t-Z3T" firstAttribute="leading" secondItem="3GZ-jv-DNp" secondAttribute="leading" constant="20" id="5gK-FT-81O"/>
+                                    <constraint firstItem="Wnt-X5-oNb" firstAttribute="top" secondItem="QA1-mL-m3t" secondAttribute="bottom" constant="20" id="VC1-sc-G07"/>
+                                    <constraint firstItem="QA1-mL-m3t" firstAttribute="leading" secondItem="3GZ-jv-DNp" secondAttribute="leading" constant="20" id="bXo-aj-3LU"/>
+                                    <constraint firstAttribute="trailing" secondItem="QA1-mL-m3t" secondAttribute="trailing" constant="20" id="d5Q-50-8dJ"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="Wnt-X5-oNb" secondAttribute="trailing" constant="20" id="sFG-XD-mnm"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="Wnt-X5-oNb" secondAttribute="bottom" constant="20" id="tIA-Cx-i94"/>
+                                    <constraint firstItem="x1q-6t-Z3T" firstAttribute="top" secondItem="3GZ-jv-DNp" secondAttribute="top" constant="20" id="uPj-S7-lbf"/>
+                                    <constraint firstItem="QA1-mL-m3t" firstAttribute="top" secondItem="3GZ-jv-DNp" secondAttribute="top" constant="85" id="vrL-Nt-cSj"/>
+                                    <constraint firstItem="Wnt-X5-oNb" firstAttribute="leading" secondItem="3GZ-jv-DNp" secondAttribute="leadingMargin" constant="20" id="wJs-Xp-70w"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3GZ-jv-DNp" secondAttribute="bottom" id="1Mr-q2-y0b"/>
+                            <constraint firstItem="3GZ-jv-DNp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4Km-5u-2yZ"/>
+                            <constraint firstItem="3GZ-jv-DNp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5fF-0P-EBU"/>
+                            <constraint firstItem="nzG-Ot-yFP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Vys-ve-YwW"/>
+                            <constraint firstItem="nzG-Ot-yFP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="imS-gQ-zfO"/>
+                            <constraint firstItem="cRZ-UD-Stu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="kuP-Un-FnS"/>
+                            <constraint firstAttribute="trailing" secondItem="3GZ-jv-DNp" secondAttribute="trailing" id="rPB-Y8-THK"/>
+                            <constraint firstAttribute="trailing" secondItem="nzG-Ot-yFP" secondAttribute="trailing" id="t7I-oA-1Zh"/>
+                            <constraint firstItem="cRZ-UD-Stu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vvY-tE-7rR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nzG-Ot-yFP" secondAttribute="bottom" id="wEK-u0-WUE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageShowingView" destination="3GZ-jv-DNp" id="0GG-TK-JGp"/>
+                        <outlet property="imageView" destination="QA1-mL-m3t" id="Eev-iE-gsE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="102.99850074962519"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="600" height="601"/>
+        <image name="bg" width="750" height="422"/>
+        <image name="upload_image" width="1369" height="903"/>
+    </resources>
+</document>

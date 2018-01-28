@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4AA9C53B201CDDCB002C007B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA9C53A201CDDCB002C007B /* AppDelegate.swift */; };
+		4AA9C53D201CDDCB002C007B /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA9C53C201CDDCB002C007B /* MainVC.swift */; };
+		4AA9C540201CDDCB002C007B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA9C53E201CDDCB002C007B /* Main.storyboard */; };
+		4AA9C543201CDDCB002C007B /* Connect_With_Matlab.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4AA9C541201CDDCB002C007B /* Connect_With_Matlab.xcdatamodeld */; };
+		4AA9C545201CDDCB002C007B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA9C544201CDDCB002C007B /* Assets.xcassets */; };
+		4AA9C548201CDDCB002C007B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA9C546201CDDCB002C007B /* LaunchScreen.storyboard */; };
+		4AD53C3F201CDEC800DCA061 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AD53C3E201CDEC800DCA061 /* GoogleService-Info.plist */; };
+		4AD53C47201CF23800DCA061 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD53C46201CF23800DCA061 /* UIViewController+Ext.swift */; };
+		AC3BCB4FC12D957EF3D82126 /* Pods_Connect_With_Matlab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DA6AD6697BB98EB0A9206DF /* Pods_Connect_With_Matlab.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4AA9C537201CDDCB002C007B /* Connect With Matlab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Connect With Matlab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AA9C53A201CDDCB002C007B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4AA9C53C201CDDCB002C007B /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		4AA9C53F201CDDCB002C007B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4AA9C542201CDDCB002C007B /* Connect_With_Matlab.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Connect_With_Matlab.xcdatamodel; sourceTree = "<group>"; };
+		4AA9C544201CDDCB002C007B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AA9C547201CDDCB002C007B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4AA9C549201CDDCB002C007B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AD53C3E201CDEC800DCA061 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4AD53C46201CF23800DCA061 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		7DA6AD6697BB98EB0A9206DF /* Pods_Connect_With_Matlab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Connect_With_Matlab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBEA0C67D841AE201CE395D4 /* Pods-Connect With Matlab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connect With Matlab.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Connect With Matlab/Pods-Connect With Matlab.debug.xcconfig"; sourceTree = "<group>"; };
+		D25C7A345E0FB2D004C68BE4 /* Pods-Connect With Matlab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connect With Matlab.release.xcconfig"; path = "Pods/Target Support Files/Pods-Connect With Matlab/Pods-Connect With Matlab.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AA9C534201CDDCB002C007B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC3BCB4FC12D957EF3D82126 /* Pods_Connect_With_Matlab.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4AA9C52E201CDDCB002C007B = {
+			isa = PBXGroup;
+			children = (
+				4AA9C539201CDDCB002C007B /* Connect With Matlab */,
+				4AA9C538201CDDCB002C007B /* Products */,
+				CB2044BE221B3921641BDB31 /* Pods */,
+				71D538A946A6B3A13946283C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4AA9C538201CDDCB002C007B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AA9C537201CDDCB002C007B /* Connect With Matlab.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AA9C539201CDDCB002C007B /* Connect With Matlab */ = {
+			isa = PBXGroup;
+			children = (
+				4AD53C45201CF22C00DCA061 /* Extensions */,
+				4AD53C42201CDED800DCA061 /* Model */,
+				4AD53C41201CDED400DCA061 /* View */,
+				4AD53C40201CDECF00DCA061 /* Controller */,
+				4AD53C3E201CDEC800DCA061 /* GoogleService-Info.plist */,
+				4AA9C53A201CDDCB002C007B /* AppDelegate.swift */,
+				4AA9C53E201CDDCB002C007B /* Main.storyboard */,
+				4AA9C544201CDDCB002C007B /* Assets.xcassets */,
+				4AA9C546201CDDCB002C007B /* LaunchScreen.storyboard */,
+				4AA9C549201CDDCB002C007B /* Info.plist */,
+				4AA9C541201CDDCB002C007B /* Connect_With_Matlab.xcdatamodeld */,
+			);
+			path = "Connect With Matlab";
+			sourceTree = "<group>";
+		};
+		4AD53C40201CDECF00DCA061 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4AA9C53C201CDDCB002C007B /* MainVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4AD53C41201CDED400DCA061 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4AD53C42201CDED800DCA061 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4AD53C45201CF22C00DCA061 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4AD53C46201CF23800DCA061 /* UIViewController+Ext.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		71D538A946A6B3A13946283C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DA6AD6697BB98EB0A9206DF /* Pods_Connect_With_Matlab.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB2044BE221B3921641BDB31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBEA0C67D841AE201CE395D4 /* Pods-Connect With Matlab.debug.xcconfig */,
+				D25C7A345E0FB2D004C68BE4 /* Pods-Connect With Matlab.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AA9C536201CDDCB002C007B /* Connect With Matlab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AA9C54C201CDDCB002C007B /* Build configuration list for PBXNativeTarget "Connect With Matlab" */;
+			buildPhases = (
+				D54EC33E9FBFC3BE62B078D1 /* [CP] Check Pods Manifest.lock */,
+				4AA9C533201CDDCB002C007B /* Sources */,
+				4AA9C534201CDDCB002C007B /* Frameworks */,
+				4AA9C535201CDDCB002C007B /* Resources */,
+				6C2B517613666393ED7E8201 /* [CP] Embed Pods Frameworks */,
+				3E870896F08A84CABE84AA4A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Connect With Matlab";
+			productName = "Connect With Matlab";
+			productReference = 4AA9C537201CDDCB002C007B /* Connect With Matlab.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AA9C52F201CDDCB002C007B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = osama;
+				TargetAttributes = {
+					4AA9C536201CDDCB002C007B = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4AA9C532201CDDCB002C007B /* Build configuration list for PBXProject "Connect With Matlab" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4AA9C52E201CDDCB002C007B;
+			productRefGroup = 4AA9C538201CDDCB002C007B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AA9C536201CDDCB002C007B /* Connect With Matlab */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AA9C535201CDDCB002C007B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA9C548201CDDCB002C007B /* LaunchScreen.storyboard in Resources */,
+				4AD53C3F201CDEC800DCA061 /* GoogleService-Info.plist in Resources */,
+				4AA9C545201CDDCB002C007B /* Assets.xcassets in Resources */,
+				4AA9C540201CDDCB002C007B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E870896F08A84CABE84AA4A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Connect With Matlab/Pods-Connect With Matlab-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C2B517613666393ED7E8201 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Connect With Matlab/Pods-Connect With Matlab-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Connect With Matlab/Pods-Connect With Matlab-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D54EC33E9FBFC3BE62B078D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Connect With Matlab-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AA9C533201CDDCB002C007B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA9C543201CDDCB002C007B /* Connect_With_Matlab.xcdatamodeld in Sources */,
+				4AA9C53D201CDDCB002C007B /* MainVC.swift in Sources */,
+				4AD53C47201CF23800DCA061 /* UIViewController+Ext.swift in Sources */,
+				4AA9C53B201CDDCB002C007B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4AA9C53E201CDDCB002C007B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AA9C53F201CDDCB002C007B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4AA9C546201CDDCB002C007B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AA9C547201CDDCB002C007B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4AA9C54A201CDDCB002C007B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4AA9C54B201CDDCB002C007B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4AA9C54D201CDDCB002C007B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBEA0C67D841AE201CE395D4 /* Pods-Connect With Matlab.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Connect With Matlab/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ned.Connect-With-Matlab";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4AA9C54E201CDDCB002C007B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D25C7A345E0FB2D004C68BE4 /* Pods-Connect With Matlab.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Connect With Matlab/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ned.Connect-With-Matlab";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4AA9C532201CDDCB002C007B /* Build configuration list for PBXProject "Connect With Matlab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA9C54A201CDDCB002C007B /* Debug */,
+				4AA9C54B201CDDCB002C007B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AA9C54C201CDDCB002C007B /* Build configuration list for PBXNativeTarget "Connect With Matlab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA9C54D201CDDCB002C007B /* Debug */,
+				4AA9C54E201CDDCB002C007B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4AA9C541201CDDCB002C007B /* Connect_With_Matlab.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4AA9C542201CDDCB002C007B /* Connect_With_Matlab.xcdatamodel */,
+			);
+			currentVersion = 4AA9C542201CDDCB002C007B /* Connect_With_Matlab.xcdatamodel */;
+			path = Connect_With_Matlab.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4AA9C52F201CDDCB002C007B /* Project object */;
+}
