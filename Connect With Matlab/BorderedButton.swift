@@ -24,5 +24,6 @@ class BorderedButton: UIButton {
     func addBorder(){
         layer.borderColor = UIColor.white.cgColor
         layer.borderWidth = 2.0
+        self.layer.cornerRadius = 8
     }
 }

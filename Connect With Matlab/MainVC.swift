@@ -14,6 +14,9 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
     @IBOutlet weak var imageShowingView: UIView!
     @IBOutlet weak var imageView: UIImageView!
     
+    
+    @IBOutlet weak var realOrFakeImage: UIImageView!
+    
     let OUTPUT_REFERENCE = "output"
     
     var imagePicker: UIImagePickerController!
@@ -27,6 +30,10 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
         let database = Database.database()
         let databaseRef = database.reference().child(OUTPUT_REFERENCE)
         
+        UIView.animate(withDuration: 1.5, animations: {
+            self.realOrFakeImage.alpha = 1.0
+        })
+        
         databaseRef.observe(DataEventType.value, with: {
             (snapshot) in
             
@@ -34,7 +41,7 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
             
                 if let output = output{
                     if output != "" && self.first != 0 {
-                        let alertController = UIAlertController(title: "Output Received", message: "The output received is \(output)", preferredStyle: UIAlertControllerStyle.alert)
+                        let alertController = UIAlertController(title: "The product is ", message: "\(output)", preferredStyle: UIAlertControllerStyle.alert)
                         
                         let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
                         
@@ -51,11 +58,13 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
             })
     }
 
-
     @IBAction func btnCapturePicPressed(_ sender: AnyObject) {
         imagePicker =  UIImagePickerController()
         imagePicker.delegate = self
         imagePicker.sourceType = .camera
+        imagePicker.allowsEditing = false
+        imagePicker.cameraCaptureMode = .photo
+        imagePicker.modalPresentationStyle = .fullScreen
         
         if UIImagePickerController.isSourceTypeAvailable(.camera){
             present(imagePicker, animated: true, completion: nil)
@@ -67,6 +76,7 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
         imagePicker =  UIImagePickerController()
         imagePicker.delegate = self
         imagePicker.sourceType = .savedPhotosAlbum
+        imagePicker.allowsEditing = true
         
         if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum){
             present(imagePicker, animated: true, completion: nil)
@@ -94,16 +104,16 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
         let metaData = StorageMetadata()
         metaData.contentType = "image/jpg"
         
-        storageRef.child("matlab_image").putData(data as Data, metadata: metaData) { (metaData, error) in
+        storageRef.child("matlab_image.jpeg").putData(data as Data, metadata: metaData) { (metaData, error) in
             
             if error != nil {
-                debugPrint(error)
+                debugPrint(error as Any)
             }else{
                 let downloadURL = metaData!.downloadURL()!.absoluteString
                 
                 print("Download URL: \(downloadURL)")
                 
-                let alertController = UIAlertController(title: "Sent", message: "Picture has been sent", preferredStyle: UIAlertControllerStyle.actionSheet)
+                let alertController = UIAlertController(title: "Sent", message: "The picture has been sent", preferredStyle: UIAlertControllerStyle.actionSheet)
                 let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
                 alertController.addAction(action)
                 
@@ -125,15 +135,17 @@ class MainVC: UIViewController, UINavigationControllerDelegate, UIImagePickerCon
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         imagePicker.dismiss(animated: true, completion: nil)
-        imageView.image = info["UIImagePickerControllerOriginalImage"] as? UIImage
+        //imageView.image = info["UIImagePickerControllerOriginalImage"] as? UIImage
         
-        let imageUrl = info[UIImagePickerControllerReferenceURL] as! NSURL
+        imageView.image = info["UIImagePickerControllerEditedImage"] as? UIImage
+        
+        /*let imageUrl = info[UIImagePickerControllerReferenceURL] as! NSURL
         // here you got file path that you select from camera roll
         
         let imageFileName = String(describing: imageUrl)
         currentFileName = imageFileName.components(separatedBy: "?")[1]
         
-        print("File name: \(currentFileName!)")
+        print("File name: \(currentFileName!)")*/
         
         imageShowingView.isHidden = false
     }

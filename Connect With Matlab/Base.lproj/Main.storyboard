@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tid-6Y-1dd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--MainVC-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="Connect_With_Matlab" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,27 +23,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Gmf-9t-HZQ">
-                                <frame key="frameInset" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nzG-Ot-yFP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cRZ-UD-Stu" userLabel="contentView">
+                                <rect key="frame" x="37.5" y="70" width="300" height="500"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upload_image" translatesAutoresizingMaskIntoConstraints="NO" id="UvM-ol-vcl">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="220"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="220" id="Jn7-8e-8YY"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press these buttons to capture or select a picture and send to the PC in order to apply MATLAB processing to it." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Yu-Ph-9Nl">
+                                        <rect key="frame" x="20" y="260" width="260" height="116.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Fgl-cU-zd9">
+                                        <rect key="frame" x="0.0" y="405" width="300" height="45"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W93-gh-m1L">
+                                                <rect key="frame" x="0.0" y="0.0" width="146.5" height="45"/>
                                                 <color key="backgroundColor" red="0.19591477509999999" green="0.59887379409999997" blue="0.8596699834" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="96m-7Q-65M"/>
@@ -49,11 +58,9 @@
                                                 <state key="normal" title="Capture a photo">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
-                                                <connections>
-                                                    <action selector="btnCapturePicPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iwu-hD-Ww4"/>
-                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWu-r9-OJx">
+                                                <rect key="frame" x="153.5" y="0.0" width="146.5" height="45"/>
                                                 <color key="backgroundColor" red="0.19591477513313293" green="0.5988737940788269" blue="0.85966998338699341" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="epO-mr-VGV"/>
@@ -62,9 +69,6 @@
                                                 <state key="normal" title="Pick from Gallery">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
-                                                <connections>
-                                                    <action selector="btnPickPicturePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DSE-4T-OSV"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -86,9 +90,13 @@
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3GZ-jv-DNp" userLabel="imageShowingView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QA1-mL-m3t"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QA1-mL-m3t">
+                                        <rect key="frame" x="20" y="85" width="335" height="489"/>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wnt-X5-oNb">
+                                        <rect key="frame" x="28" y="594" width="319" height="45"/>
                                         <color key="backgroundColor" red="0.19591477509999999" green="0.59887379409999997" blue="0.8596699834" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="Kka-Gh-BPP"/>
@@ -97,19 +105,14 @@
                                         <state key="normal" title="Send this picture">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <action selector="btnUploadPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x9q-vV-YPN"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1q-6t-Z3T">
+                                        <rect key="frame" x="20" y="20" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="9yD-jS-yU9"/>
                                             <constraint firstAttribute="height" constant="50" id="KTo-bV-oeh"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
-                                        <connections>
-                                            <action selector="btnBackPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WuK-Ax-u91"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -149,10 +152,175 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="102.99850074962519"/>
         </scene>
+        <!--MainVC-->
+        <scene sceneID="3sa-iY-aER">
+            <objects>
+                <viewController id="tid-6Y-1dd" customClass="MainVC" customModule="Connect_With_Matlab" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="U18-Oa-wll"/>
+                        <viewControllerLayoutGuide type="bottom" id="ve2-dz-Hcd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ppd-mw-drY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg11" translatesAutoresizingMaskIntoConstraints="NO" id="Xf8-o1-4lO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwP-qP-Ke6" customClass="BorderedButton" customModule="Connect_With_Matlab" customModuleProvider="target">
+                                <rect key="frame" x="36" y="537" width="303" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="45" id="2bH-Nl-89Q"/>
+                                    <constraint firstAttribute="height" constant="45" id="94x-FX-qdK"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="c4t-C3-pkx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Capture a picture">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCapturePicPressed:" destination="tid-6Y-1dd" eventType="touchUpInside" id="021-wF-eE5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HV4-Lh-27w" customClass="BorderedButton" customModule="Connect_With_Matlab" customModuleProvider="target">
+                                <rect key="frame" x="36" y="602" width="303" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="fm2-7W-dA7"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="iyZ-wL-doV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Load from gallery">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPickPicturePressed:" destination="tid-6Y-1dd" eventType="touchUpInside" id="8yT-Oh-jWF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Provide a picture to check whether its real or fake." textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJ4-Ek-sg8">
+                                <rect key="frame" x="56" y="390" width="263" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="RvM-pB-tie"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SE-CURE APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JzU-8n-Q6Z">
+                                <rect key="frame" x="58" y="70" width="259" height="55"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="real-or-fakeai" translatesAutoresizingMaskIntoConstraints="NO" id="iop-0t-ZMa">
+                                <rect key="frame" x="76" y="150" width="223" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="tIH-7O-aUh"/>
+                                </constraints>
+                            </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="drk-3V-qqO" userLabel="imageShowingView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jEk-7m-057">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg11" translatesAutoresizingMaskIntoConstraints="NO" id="Kcj-p1-YQf" userLabel="backgroundImage">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8WY-zP-5mi">
+                                        <rect key="frame" x="20" y="85" width="335" height="489"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqW-61-E9g" customClass="BorderedButton" customModule="Connect_With_Matlab" customModuleProvider="target">
+                                        <rect key="frame" x="28" y="594" width="319" height="45"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="ohH-0h-bSM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <state key="normal" title="Send this picture">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnUploadPressed:" destination="tid-6Y-1dd" eventType="touchUpInside" id="yPz-xn-SHW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlC-J7-m4I">
+                                        <rect key="frame" x="20" y="20" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="F9W-dy-tEv"/>
+                                            <constraint firstAttribute="width" constant="50" id="K5W-S2-Z7X"/>
+                                        </constraints>
+                                        <state key="normal" image="back2"/>
+                                        <connections>
+                                            <action selector="btnBackPressed:" destination="tid-6Y-1dd" eventType="touchUpInside" id="le2-cy-YJl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="8WY-zP-5mi" firstAttribute="top" secondItem="drk-3V-qqO" secondAttribute="top" constant="85" id="3J6-2g-yg8"/>
+                                    <constraint firstItem="wlC-J7-m4I" firstAttribute="top" secondItem="drk-3V-qqO" secondAttribute="top" constant="20" id="3cd-Ya-cWF"/>
+                                    <constraint firstItem="Kcj-p1-YQf" firstAttribute="leading" secondItem="drk-3V-qqO" secondAttribute="leading" id="4Gd-Lx-w1U"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="eqW-61-E9g" secondAttribute="bottom" constant="20" id="4H9-H8-n7m"/>
+                                    <constraint firstItem="eqW-61-E9g" firstAttribute="leading" secondItem="drk-3V-qqO" secondAttribute="leadingMargin" constant="20" id="5Ze-un-6Bj"/>
+                                    <constraint firstItem="jEk-7m-057" firstAttribute="top" secondItem="drk-3V-qqO" secondAttribute="top" id="72K-5L-gVC"/>
+                                    <constraint firstItem="jEk-7m-057" firstAttribute="leading" secondItem="drk-3V-qqO" secondAttribute="leading" id="7eO-6g-SK7"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="eqW-61-E9g" secondAttribute="trailing" constant="20" id="AuQ-ff-fS6"/>
+                                    <constraint firstItem="eqW-61-E9g" firstAttribute="top" secondItem="8WY-zP-5mi" secondAttribute="bottom" constant="20" id="FU0-0X-10Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="jEk-7m-057" secondAttribute="bottom" id="FU5-3G-TY5"/>
+                                    <constraint firstAttribute="trailing" secondItem="jEk-7m-057" secondAttribute="trailing" id="Fhe-Ud-yM7"/>
+                                    <constraint firstItem="Kcj-p1-YQf" firstAttribute="top" secondItem="drk-3V-qqO" secondAttribute="top" id="Jc2-uD-aDO"/>
+                                    <constraint firstItem="wlC-J7-m4I" firstAttribute="leading" secondItem="drk-3V-qqO" secondAttribute="leading" constant="20" id="KvX-kb-kjn"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kcj-p1-YQf" secondAttribute="trailing" id="Kw6-O3-AHs"/>
+                                    <constraint firstItem="8WY-zP-5mi" firstAttribute="leading" secondItem="drk-3V-qqO" secondAttribute="leading" constant="20" id="MQD-A7-oe4"/>
+                                    <constraint firstAttribute="bottom" secondItem="Kcj-p1-YQf" secondAttribute="bottom" id="XNk-p0-i7P"/>
+                                    <constraint firstAttribute="trailing" secondItem="8WY-zP-5mi" secondAttribute="trailing" constant="20" id="tU5-Ij-WfI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UJ4-Ek-sg8" firstAttribute="top" secondItem="iop-0t-ZMa" secondAttribute="bottom" constant="40" id="12S-az-G0m"/>
+                            <constraint firstItem="ve2-dz-Hcd" firstAttribute="top" secondItem="drk-3V-qqO" secondAttribute="bottom" id="7Or-cG-QD4"/>
+                            <constraint firstItem="drk-3V-qqO" firstAttribute="leading" secondItem="ppd-mw-drY" secondAttribute="leading" id="Ak2-eW-Q6h"/>
+                            <constraint firstItem="UJ4-Ek-sg8" firstAttribute="leading" secondItem="ppd-mw-drY" secondAttribute="leadingMargin" constant="40" id="DOG-o7-v9D"/>
+                            <constraint firstItem="JzU-8n-Q6Z" firstAttribute="top" secondItem="U18-Oa-wll" secondAttribute="bottom" constant="50" id="JPv-Fp-wdG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MwP-qP-Ke6" secondAttribute="trailing" constant="20" id="Mud-sb-kZ4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UJ4-Ek-sg8" secondAttribute="trailing" constant="40" id="Sma-Nb-AO0"/>
+                            <constraint firstItem="ve2-dz-Hcd" firstAttribute="top" secondItem="HV4-Lh-27w" secondAttribute="bottom" constant="20" id="T3K-nk-nLk"/>
+                            <constraint firstItem="HV4-Lh-27w" firstAttribute="top" secondItem="MwP-qP-Ke6" secondAttribute="bottom" constant="20" id="WAi-tZ-1r3"/>
+                            <constraint firstItem="iop-0t-ZMa" firstAttribute="top" secondItem="JzU-8n-Q6Z" secondAttribute="bottom" constant="25" id="Xya-OB-1Eg"/>
+                            <constraint firstItem="HV4-Lh-27w" firstAttribute="leading" secondItem="ppd-mw-drY" secondAttribute="leadingMargin" constant="20" id="cfy-0M-hfw"/>
+                            <constraint firstItem="MwP-qP-Ke6" firstAttribute="leading" secondItem="ppd-mw-drY" secondAttribute="leadingMargin" constant="20" id="fCL-QX-Lnr"/>
+                            <constraint firstItem="drk-3V-qqO" firstAttribute="top" secondItem="ppd-mw-drY" secondAttribute="top" id="fsL-NX-4Mf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iop-0t-ZMa" secondAttribute="trailing" constant="60" id="hm6-EG-XsX"/>
+                            <constraint firstItem="iop-0t-ZMa" firstAttribute="leading" secondItem="ppd-mw-drY" secondAttribute="leadingMargin" constant="60" id="meM-4L-65D"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HV4-Lh-27w" secondAttribute="trailing" constant="20" id="nhc-mu-cUE"/>
+                            <constraint firstItem="JzU-8n-Q6Z" firstAttribute="centerX" secondItem="ppd-mw-drY" secondAttribute="centerX" id="nui-La-XED"/>
+                            <constraint firstAttribute="trailing" secondItem="drk-3V-qqO" secondAttribute="trailing" id="vEb-WO-OSg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageShowingView" destination="drk-3V-qqO" id="gqE-sr-FpE"/>
+                        <outlet property="imageView" destination="8WY-zP-5mi" id="rUx-0f-A1T"/>
+                        <outlet property="realOrFakeImage" destination="iop-0t-ZMa" id="AmL-q7-153"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MIq-kY-zXP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="984.79999999999995" y="102.99850074962519"/>
+        </scene>
     </scenes>
     <resources>
         <image name="back" width="600" height="601"/>
+        <image name="back2" width="512" height="512"/>
         <image name="bg" width="750" height="422"/>
+        <image name="bg11" width="205" height="246"/>
+        <image name="real-or-fakeai" width="644" height="644"/>
         <image name="upload_image" width="1369" height="903"/>
     </resources>
 </document>
